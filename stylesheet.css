@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    background-color: rgb(40, 38, 38);
+    color: white;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background-color: transparent;
+    border: solid white;
+    border-radius: 100px;
+    margin: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.312);
+}
+
+.moves-option {
+    height: 100px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.lastbutton {
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Display elements */
+.showResult {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.moveicon {
+    height: 50px;
+}
+
+.socreboard {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Container for the video and canvas */
+#webcam-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: 20px auto;
+    border-radius: 10px; /* Optional rounded corners */
+    overflow: hidden;
+}
+
+/* Video styling */
+#webcam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the area */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Canvas styling for overlay */
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicking through canvas */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Responsive styling */
+@media (max-width: 750px) {
+    .moves-option {
+        height: 30px;
+        padding: 5px;
+    }
+
+    button {
+        margin: 10px;
+    }
+
+    .showResult {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+
+    .moveicon {
+        margin-top: 20px;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    #webcam-container {
+        width: 100%;
+        height: auto;
+    }
+
+    #webcam, #canvas {
+        width: 100%;
+        height: auto;
+    }
+}
