@@ -81,6 +81,6 @@ function playGame(playerMove) {
   updateScoreElement();
 
   document.querySelector('.showResult').innerHTML = result;
-  document.querySelector('.moves').innerHTML = `You Picked: ${playerMove} <img src="${playerMove}-emoji.png" class="moveicon"> Computer Picked: ${computerMove} <img src="${computerMove}-emoji.png" class="moveicon">`;
+  document.querySelector('.moves').innerHTML = `You Picked: ${playerMove} <img src="https://ycstudios.github.io/Rock-Paper-Game/${playerMove}-emoji.png" class="moveicon"> Computer Picked: ${computerMove} <img src="https://ycstudios.github.io/Rock-Paper-Game/${computerMove}-emoji.png" class="moveicon">`;
 }
 
